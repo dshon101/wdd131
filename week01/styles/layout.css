@@ -33,7 +33,7 @@ h1 {
 
 .parent{
     display: grid;
-    grid-template: auto 1fr auto;
+    grid-template: auto 1fr;
 }
 
 .top {
