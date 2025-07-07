@@ -99,6 +99,12 @@ section.card img {
     border-radius: 8px;
 }
 
+section.card img:hover {
+    background-color: #3F3D56;
+    transform: scale(1.55);
+    transition: transform 0.3s, background-color 5.3s;
+}
+
 /* Responsive adjustments for the cards */
 @media (min-width: 600px) {
     section.card {
@@ -119,6 +125,7 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    color: #FF6F61;
-    text-decoration: underline; }
+footer a img:hover {
+    background-color: #3F3D56;
+    transform: scale(2.05);
+}
