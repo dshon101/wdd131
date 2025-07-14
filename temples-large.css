@@ -1,4 +1,16 @@
 /* Larger screen styles */
+@media screen and (min-width: 768px) {
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #FAFAFA;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
 
 .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -25,3 +37,5 @@ header {
 /* Hover effect for navigation links in large screens */
 nav ul li a:hover {
     background-color: #005555; }
+
+}
