@@ -1,0 +1,68 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+/* Style for menu toggle button */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Hidden on large screens */
+}
+
+/* Style for navigation list */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    /* Show toggle button */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide menu by default in mobile view */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Show menu when active */
+    .nav-list.show {
+        display: flex;
+    } }

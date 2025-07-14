@@ -1,0 +1,27 @@
+/* Larger screen styles */
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Style nav menu for large screens */
+#hamburger {
+    display: none;
+    /* Hidden on large screens */
+}
+
+/* Style header for large screens */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Hover effect for navigation links in large screens */
+nav ul li a:hover {
+    background-color: #005555; }
