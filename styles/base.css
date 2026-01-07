@@ -81,8 +81,8 @@ section {
 section h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #fff;
-    background-color: #3F3D56;
+    color: #3F3D56;
+    /*background-color: #3F3D56;*/
 }
 section.card {
     height: 50%;
