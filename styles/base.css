@@ -36,10 +36,12 @@ header #course-title {
 /* Nav styling: Flex navigation style */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 15px;
     background-color: #6C63FF;
     padding: 10px 0;
+    font-size: large;
+    font-weight: 500;
 }
 
 nav a {
