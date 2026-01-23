@@ -21,6 +21,10 @@ header {
     background-color: #006666;
     color: white;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 header h1 {
@@ -28,12 +32,6 @@ header h1 {
     display: inline-block;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
 
 nav {
     display: flex;
