@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the beauty and culture of Zimbabwe">
+    <meta name="author" content="Demetrious Shoniwa">
+    <title>Zimbabwe - Land of Great Stone Houses</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Zimbabwe</h1>
+        <p>The Jewel of Africa</p>
+    </header>
+
+    <main>
+        <!-- Hero Section with Responsive Images -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/fallapart.webp" media="(max-width: 500px)">
+                <source srcset="images/sunset.webp" media="(max-width: 1000px)">
+                <img src="images/frontfall.webp" alt="Stunning Victoria Falls in Zimbabwe" width="1200" height="600">
+            </picture>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Welcome to Zimbabwe</h2>
+            <p>Zimbabwe is a landlocked country in southern Africa known for its dramatic landscape and diverse
+                wildlife. Home to the magnificent Victoria Falls, ancient stone ruins, and vibrant culture, Zimbabwe
+                offers visitors a rich tapestry of natural wonders and historical treasures. From the thundering waters
+                of "Mosi-oa-Tunya" to the UNESCO World Heritage sites, Zimbabwe captivates the hearts of all who visit.
+            </p>
+        </section>
+
+        <!-- Information Grid -->
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Capital</h3>
+                <p>Harare</p>
+            </div>
+            <div class="info-card">
+                <h3>Population</h3>
+                <p>15.1 million</p>
+            </div>
+            <div class="info-card">
+                <h3>Language</h3>
+                <p>English, Shona, Ndebele</p>
+            </div>
+            <div class="info-card">
+                <h3>Currency</h3>
+                <p>Zimbabwean Dollar (ZWL)</p>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather ☀️</h2>
+            <div class="weather-content">
+                <img src="images/weather-icon.svg" alt="Sunny weather" class="weather-icon-mobile">
+                <div class="weather-details">
+                    <p><strong>Temperature:</strong> 28°C</p>
+                    <p><strong>Conditions:</strong> Sunny</p>
+                    <p><strong>Wind:</strong> 12 km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section class="attractions">
+            <h2>Must-See Attractions</h2>
+            <div class="attraction-list">
+                <article class="attraction">
+                    <h3>Victoria Falls</h3>
+                    <p>One of the Seven Natural Wonders of the World, Victoria Falls is the largest sheet of falling
+                        water on Earth. Known locally as "Mosi-oa-Tunya" (The Smoke That Thunders), it's a breathtaking
+                        spectacle of nature's power.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Great Zimbabwe Ruins</h3>
+                    <p>An ancient city and UNESCO World Heritage Site, the Great Zimbabwe Ruins are stone structures
+                        dating back to the 11th century. These ruins are a testament to the sophisticated kingdom that
+                        once thrived here.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Hwange National Park</h3>
+                    <p>Zimbabwe's largest game reserve, home to over 100 mammal species and 400 bird species. Famous for
+                        its large elephant population, it offers incredible safari experiences and wildlife viewing.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Matobo Hills</h3>
+                    <p>A stunning landscape of granite kopjes and wooded valleys featuring ancient rock art, diverse
+                        wildlife, and the final resting place of Cecil Rhodes. A UNESCO World Heritage Site rich in
+                        spiritual and cultural significance.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Lake Kariba</h3>
+                    <p>One of the world's largest man-made lakes, offering houseboat safaris, excellent fishing, and
+                        spectacular sunsets. The lake is home to hippos, crocodiles, and abundant birdlife.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Mana Pools National Park</h3>
+                    <p>A UNESCO World Heritage Site on the banks of the Zambezi River, known for its wilderness and
+                        wildlife. One of the few places in Africa where visitors can walk with elephants and experience
+                        true remote safari adventures.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Your Name | Zimbabwe</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
