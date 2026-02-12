@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore exciting activities at Victoria Falls - from adventure sports to cultural experiences">    
+    <meta name="author" content="Demetrious Shoniwa">
+    <title>Activities | Victoria Falls Visitor Guide</title>
+    <link rel="stylesheet" href="styles/proj-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="proj-index.html" class="logo">Victoria Falls</a>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="proj-index.html">Home</a></li>
+                    <li><a href="proj-activities.html" class="active">Activities</a></li>
+                    <li><a href="proj-planning.html">Plan Your Visit</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Activities & Experiences</h1>
+                <p>From heart-pounding adventures to peaceful cultural encounters, Victoria Falls offers unforgettable
+                    experiences for every traveler</p>
+            </div>
+        </section>
+
+        <section class="activities-section">
+            <div class="container">
+                <div class="filters">
+                    <h2>Filter Activities</h2>
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="type-filter">Type:</label>
+                            <select id="type-filter">
+                                <option value="all">All Types</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="cultural">Cultural</option>
+                                <option value="wildlife">Wildlife</option>
+                                <option value="scenic">Scenic</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="price-filter">Price Range:</label>
+                            <select id="price-filter">
+                                <option value="all">All Prices</option>
+                                <option value="budget">Budget ($-$$)</option>
+                                <option value="moderate">Moderate ($$-$$$)</option>
+                                <option value="premium">Premium ($$$+)</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="difficulty-filter">Difficulty:</label>
+                            <select id="difficulty-filter">
+                                <option value="all">All Levels</option>
+                                <option value="easy">Easy</option>
+                                <option value="moderate">Moderate</option>
+                                <option value="challenging">Challenging</option>
+                            </select>
+                        </div>
+
+                        <button id="reset-filters" class="reset-btn">Reset Filters</button>
+                    </div>
+                </div>
+
+                <div id="activities-grid" class="activities-grid">
+                    <!-- Activities will be dynamically inserted here by JavaScript -->
+                </div>
+
+                <div id="no-results" class="no-results" style="display: none;">
+                    <p>No activities match your current filters. Try adjusting your selection!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="favorites-section">
+            <div class="container">
+                <h2>Your Saved Activities</h2>
+                <div id="favorites-list" class="favorites-list">
+                    <p class="empty-favorites">You haven't saved any activities yet. Click the heart icon on activities
+                        to add them here!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Victoria Falls Visitor Guide</p>
+                <p><a href="proj-references.html">Image & Content References</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/proj-main.js" defer></script>
+    <script src="scripts/proj-activities.js" defer></script>
+</body>
+
+</html>
