@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form for rating and reviewing purchased products">
+    <meta name="author" content="Demetrious Shoniwa">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+        <p>Share your experience with our products</p>
+    </header>
+
+    <main>
+        <form id="review-form" method="get" action="review.html">
+            <fieldset>
+                <legend>Product Information</legend>
+
+                <div class="form-group">
+                    <label for="product-name">Product Name <span class="required">*</span></label>
+                    <select id="product-name" name="product-name" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Overall Rating <span class="required">*</span></label>
+                    <div class="rating-group" role="radiogroup" aria-labelledby="rating">
+                        <input type="radio" id="rating-1" name="rating" value="1" required>
+                        <label for="rating-1" class="star-label" title="1 star">☆</label>
+
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label for="rating-2" class="star-label" title="2 stars">☆</label>
+
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label for="rating-3" class="star-label" title="3 stars">☆</label>
+
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label for="rating-4" class="star-label" title="4 stars">☆</label>
+
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label for="rating-5" class="star-label" title="5 stars">☆</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="install-date">Date of Installation <span class="required">*</span></label>
+                    <input type="date" id="install-date" name="install-date" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Features</legend>
+
+                <div class="form-group">
+                    <label>Useful Features (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="feature-quality" name="features" value="quality">
+                            <label for="feature-quality">High Quality Materials</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="feature-durability" name="features" value="durability">
+                            <label for="feature-durability">Durability</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="feature-easy" name="features" value="easy-install">
+                            <label for="feature-easy">Easy Installation</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="feature-performance" name="features" value="performance">
+                            <label for="feature-performance">Great Performance</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="feature-value" name="features" value="value">
+                            <label for="feature-value">Good Value</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Review</legend>
+
+                <div class="form-group">
+                    <label for="written-review">Written Review</label>
+                    <textarea id="written-review" name="written-review" rows="6"
+                        placeholder="Share your detailed experience with this product..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-name">Your Name</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Enter your name (optional)">
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Product Review Form Assignment</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
