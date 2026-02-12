@@ -1,0 +1,401 @@
+/* Site Plan Styling */
+
+:root {
+    --primary-color: #1e5a7d;
+    --secondary-color: #2d8ab8;
+    --accent-color: #f4a261;
+    --light-bg: #e9f5f9;
+    --dark-text: #0d2d3d;
+    --white: #ffffff;
+    --gray-light: #f4f4f4;
+    --gray-medium: #cccccc;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.7;
+    color: var(--dark-text);
+    background: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--white);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.plan-section {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.plan-section:last-of-type {
+    border-bottom: none;
+}
+
+.plan-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.content-box {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.content-box h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+    color: var(--secondary-color);
+}
+
+.content-box p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.content-box ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-box li {
+    margin-bottom: 0.5rem;
+}
+
+.site-name-display {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.site-name {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+.scenario {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.scenario h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.scenario p {
+    margin-bottom: 0.75rem;
+}
+
+.scenario strong {
+    color: var(--secondary-color);
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-swatch {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.swatch {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.primary-color {
+    background-color: #1e5a7d;
+}
+
+.secondary-color {
+    background-color: #2d8ab8;
+}
+
+.accent-color {
+    background-color: #f4a261;
+}
+
+.light-bg {
+    background-color: #e9f5f9;
+    color: var(--dark-text);
+}
+
+.dark-text {
+    background-color: #0d2d3d;
+}
+
+.color-info {
+    padding: 1rem;
+}
+
+.color-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.color-hex {
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.color-usage {
+    font-size: 0.9rem;
+    color: var(--dark-text);
+    line-height: 1.5;
+}
+
+.font-example {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.display-font {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.body-font-example {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.wireframe {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+}
+
+.mobile-wireframe {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desktop-wireframe {
+    max-width: 100%;
+}
+
+.wireframe-section {
+    border: 2px solid var(--gray-medium);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--dark-text);
+    border-radius: 4px;
+}
+
+.header-section {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem;
+}
+
+.hero-section {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 3rem 1rem;
+}
+
+.content-section {
+    background: var(--light-bg);
+    padding: 1.5rem;
+}
+
+.cta-section {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+}
+
+.footer-section {
+    background: var(--dark-text);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.sub-label {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+.fact-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.desktop-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-box {
+    background: var(--white);
+    border: 2px dashed var(--gray-medium);
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.content-blocks {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.two-column {
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-block {
+    background: var(--white);
+    border: 2px dashed var(--gray-medium);
+    padding: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.site-structure {
+    margin-top: 1.5rem;
+}
+
+.structure-level {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.structure-branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.branch {
+    text-align: center;
+}
+
+.page-box {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.page-description {
+    font-size: 0.9rem;
+    color: var(--dark-text);
+}
+
+footer {
+    background: var(--dark-text);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+    
+    .desktop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+    
+    .structure-branches {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    .wireframe-section {
+        break-inside: avoid;
+    }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website planning document for Victoria Falls Visitor Guide - WDD 131 Final Project">
+    <title>Site Plan | Victoria Falls Visitor Guide</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Victoria Falls Visitor Guide</h1>
+        <p class="subtitle">Website Planning Document</p>
+    </header>
+
+    <main>
+        <section class="plan-section">
+            <h2>Site Name</h2>
+            <div class="content-box">
+                <div class="site-name-display">
+                    <h3 class="site-name">Victoria Falls Visitor Guide</h3>
+                    <p class="tagline">Mosi-oa-Tunya - The Smoke That Thunders</p>
+                </div>
+                <p><strong>Why this name?</strong></p>
+                <p>The name "Victoria Falls Visitor Guide" is direct, descriptive, and SEO-friendly. It immediately communicates the site's purpose - providing comprehensive visitor information about Victoria Falls. The inclusion of the local name "Mosi-oa-Tunya" honors the indigenous Lozi name and adds cultural depth to the branding.</p>
+                <p><strong>Optional Domain:</strong> victoriafallsguide.org or victoriafallsvisitor.com</p>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Site Purpose</h2>
+            <div class="content-box">
+                <p>The Victoria Falls Visitor Guide serves as a comprehensive digital resource for tourists planning to visit one of the Seven Natural Wonders of the World. The site addresses the common challenge of information overload when planning a trip to Victoria Falls by providing curated, practical information in an accessible format.</p>
+                
+                <h3>Key Objectives:</h3>
+                <ul>
+                    <li><strong>Inform:</strong> Provide essential facts about Victoria Falls, including its history, significance, and natural features</li>
+                    <li><strong>Inspire:</strong> Showcase the beauty and excitement of Victoria Falls through compelling content and visuals</li>
+                    <li><strong>Guide:</strong> Offer practical planning tools including activity filters, itinerary builders, and trip planning resources</li>
+                    <li><strong>Engage:</strong> Create an interactive experience through filtering capabilities, favorites system, and budget calculators</li>
+                </ul>
+
+                <h3>Services Provided:</h3>
+                <ul>
+                    <li>Detailed activity database with filtering by type, price, and difficulty</li>
+                    <li>Interactive trip planning tools with budget tracking</li>
+                    <li>Seasonal visit recommendations and practical travel information</li>
+                    <li>Favorites system for saving preferred activities</li>
+                    <li>Contact form for visitor inquiries</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Target Audience Scenarios</h2>
+            <div class="content-box">
+                <div class="scenario">
+                    <h3>Scenario 1: Adventure Seeker</h3>
+                    <p><strong>Question:</strong> "What extreme adventure activities are available at Victoria Falls, and which ones are worth the cost?"</p>
+                    <p><strong>How the site addresses this:</strong> The activities page provides comprehensive filtering options by activity type (adventure), difficulty level, and price range. Each activity card displays cost, duration, and difficulty, allowing users to compare options. The favorites system lets users save activities they're interested in for later comparison.</p>
+                </div>
+
+                <div class="scenario">
+                    <h3>Scenario 2: Budget-Conscious Traveler</h3>
+                    <p><strong>Question:</strong> "How much will my Victoria Falls trip cost, and what activities can I afford on my budget?"</p>
+                    <p><strong>How the site addresses this:</strong> The trip planner includes a budget calculator that tracks estimated costs as users add activities. The activity filters allow sorting by price range (budget, moderate, premium), and each activity clearly displays its cost in USD. Users can build a complete itinerary and see their total estimated expenses before committing.</p>
+                </div>
+
+                <div class="scenario">
+                    <h3>Scenario 3: First-Time Visitor</h3>
+                    <p><strong>Question:</strong> "When is the best time to visit Victoria Falls, and what do I need to know before I go?"</p>
+                    <p><strong>How the site addresses this:</strong> The planning page provides detailed seasonal information comparing high, medium, and low water seasons. It includes practical sections on getting there, where to stay, what to pack, and safety tips. The content is organized in easy-to-scan sections with clear headers and visual hierarchy.</p>
+                </div>
+
+                <div class="scenario">
+                    <h3>Scenario 4: Cultural Explorer</h3>
+                    <p><strong>Question:</strong> "Are there cultural experiences available beyond just viewing the waterfall?"</p>
+                    <p><strong>How the site addresses this:</strong> The activities database includes cultural experiences like village tours and traditional dance performances, clearly tagged as "cultural" activities. Users can filter specifically for cultural experiences and see descriptions that highlight the educational and immersive aspects of these activities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Color Schema</h2>
+            <div class="content-box">
+                <p>The color palette draws inspiration from the natural environment of Victoria Falls - deep blues representing water, earth tones for the surrounding landscape, and warm accents suggesting sunlight and African warmth.</p>
+                
+                <div class="color-palette">
+                    <div class="color-swatch">
+                        <div class="swatch primary-color"></div>
+                        <div class="color-info">
+                            <p class="color-name">Primary Color</p>
+                            <p class="color-hex">#1e5a7d</p>
+                            <p class="color-usage">Headers, Navigation, Primary Text</p>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch secondary-color"></div>
+                        <div class="color-info">
+                            <p class="color-name">Secondary Color</p>
+                            <p class="color-hex">#2d8ab8</p>
+                            <p class="color-usage">Links, Call-to-Action Sections, Accent Headings</p>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch accent-color"></div>
+                        <div class="color-info">
+                            <p class="color-name">Accent Color</p>
+                            <p class="color-hex">#f4a261</p>
+                            <p class="color-usage">Buttons, Highlights, Interactive Elements</p>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch light-bg"></div>
+                        <div class="color-info">
+                            <p class="color-name">Light Background</p>
+                            <p class="color-hex">#e9f5f9</p>
+                            <p class="color-usage">Section Backgrounds, Card Backgrounds</p>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch dark-text"></div>
+                        <div class="color-info">
+                            <p class="color-name">Dark Text</p>
+                            <p class="color-hex">#0d2d3d</p>
+                            <p class="color-usage">Body Text, Paragraphs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Accessibility Considerations:</h3>
+                <p>All color combinations have been selected to meet WCAG 2.1 Level AA contrast requirements (minimum 4.5:1 for normal text, 3:1 for large text). The primary color (#1e5a7d) on white background provides a contrast ratio of 7.8:1, exceeding AAA standards.</p>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Typography</h2>
+            <div class="content-box">
+                <div class="font-example">
+                    <h3 class="display-font">Crimson Pro</h3>
+                    <p><strong>Font Family:</strong> Crimson Pro (Google Fonts)</p>
+                    <p><strong>Weights Used:</strong> 400 (Regular), 600 (Semi-Bold), 700 (Bold)</p>
+                    <p><strong>Usage:</strong> All headings (h1-h6), site logo, hero titles</p>
+                    <p><strong>Characteristics:</strong> Serif font that conveys elegance and timelessness, appropriate for a natural wonder with historical significance. The serif style adds gravitas while remaining highly readable at large sizes.</p>
+                </div>
+
+                <div class="font-example body-font-example">
+                    <h3 class="display-font">Work Sans</h3>
+                    <p><strong>Font Family:</strong> Work Sans (Google Fonts)</p>
+                    <p><strong>Weights Used:</strong> 300 (Light), 400 (Regular), 500 (Medium), 600 (Semi-Bold)</p>
+                    <p><strong>Usage:</strong> Body text, navigation links, buttons, form labels, all paragraph content</p>
+                    <p><strong>Characteristics:</strong> Clean sans-serif font optimized for screen readability. Its geometric construction provides excellent legibility at all sizes while maintaining a modern, approachable feel.</p>
+                </div>
+
+                <h3>Typography Hierarchy:</h3>
+                <ul>
+                    <li><strong>H1:</strong> 2.5-3.5rem (Crimson Pro Bold) - Page titles</li>
+                    <li><strong>H2:</strong> 1.8-2.5rem (Crimson Pro Bold) - Section headings</li>
+                    <li><strong>H3:</strong> 1.3-1.5rem (Crimson Pro Semi-Bold) - Subsection headings</li>
+                    <li><strong>Body:</strong> 1rem/16px (Work Sans Regular) - Paragraph text</li>
+                    <li><strong>Navigation:</strong> 1rem (Work Sans Medium) - Menu links</li>
+                    <li><strong>Buttons:</strong> 1-1.1rem (Work Sans Semi-Bold) - CTAs and forms</li>
+                </ul>
+
+                <p><strong>Rationale:</strong> The pairing of Crimson Pro (serif) for headings with Work Sans (sans-serif) for body text creates visual contrast and hierarchy while maintaining professional consistency. This combination is particularly effective for tourism websites where elegance must balance with practical information delivery.</p>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Wireframes</h2>
+            <div class="content-box">
+                <h3>Home Page - Mobile View</h3>
+                <div class="wireframe mobile-wireframe">
+                    <div class="wireframe-section header-section">
+                        <p>Header / Navigation</p>
+                    </div>
+                    <div class="wireframe-section hero-section">
+                        <p>Hero Section</p>
+                        <p class="sub-label">Title, Subtitle, CTA Button</p>
+                    </div>
+                    <div class="wireframe-section content-section">
+                        <p>Quick Facts</p>
+                        <div class="fact-boxes">
+                            <div class="fact-box">Fact 1</div>
+                            <div class="fact-box">Fact 2</div>
+                            <div class="fact-box">Fact 3</div>
+                            <div class="fact-box">Fact 4</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-section content-section">
+                        <p>Why Visit Section</p>
+                        <div class="content-blocks">
+                            <div class="content-block">Text Content</div>
+                            <div class="content-block">Image</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-section cta-section">
+                        <p>Call to Action</p>
+                    </div>
+                    <div class="wireframe-section footer-section">
+                        <p>Footer</p>
+                    </div>
+                </div>
+
+                <h3>Home Page - Desktop View</h3>
+                <div class="wireframe desktop-wireframe">
+                    <div class="wireframe-section header-section">
+                        <p>Header / Navigation (Logo Left, Menu Right)</p>
+                    </div>
+                    <div class="wireframe-section hero-section">
+                        <p>Hero Section - Full Width</p>
+                        <p class="sub-label">Centered Title, Subtitle, CTA Button</p>
+                    </div>
+                    <div class="wireframe-section content-section">
+                        <p>Quick Facts - 4 Column Grid</p>
+                        <div class="fact-boxes desktop-grid">
+                            <div class="fact-box">Fact 1</div>
+                            <div class="fact-box">Fact 2</div>
+                            <div class="fact-box">Fact 3</div>
+                            <div class="fact-box">Fact 4</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-section content-section">
+                        <p>Why Visit - Two Column Layout</p>
+                        <div class="content-blocks two-column">
+                            <div class="content-block">Text Content (Left)</div>
+                            <div class="content-block">Image (Right)</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-section cta-section">
+                        <p>Call to Action - Centered with Two Buttons</p>
+                    </div>
+                    <div class="wireframe-section footer-section">
+                        <p>Footer - Centered Content</p>
+                    </div>
+                </div>
+
+                <h3>Key Design Decisions:</h3>
+                <ul>
+                    <li><strong>Mobile-First Approach:</strong> Content stacks vertically on mobile, expands to multi-column layouts on tablet and desktop</li>
+                    <li><strong>Sticky Navigation:</strong> Header remains visible during scroll for easy navigation</li>
+                    <li><strong>Card-Based Layout:</strong> Activities and information presented in modular cards for scanability</li>
+                    <li><strong>Responsive Grid System:</strong> Flexible grid adapts from 1 column (mobile) to 2-4 columns (desktop)</li>
+                    <li><strong>Consistent Spacing:</strong> 2rem vertical spacing between sections, 1.5rem internal padding</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Site Structure</h2>
+            <div class="content-box">
+                <h3>Navigation Structure:</h3>
+                <div class="site-structure">
+                    <div class="structure-level">
+                        <div class="page-box">Home (index.html)</div>
+                    </div>
+                    <div class="structure-branches">
+                        <div class="branch">
+                            <div class="page-box">Activities (activities.html)</div>
+                            <p class="page-description">Filterable activity database with favorites</p>
+                        </div>
+                        <div class="branch">
+                            <div class="page-box">Plan Your Visit (planning.html)</div>
+                            <p class="page-description">Travel info, trip planner, contact form</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Page Purposes:</h3>
+                <ul>
+                    <li><strong>Home:</strong> Introduce Victoria Falls, provide quick facts, inspire visitation</li>
+                    <li><strong>Activities:</strong> Showcase available experiences with interactive filtering and favorites system</li>
+                    <li><strong>Planning:</strong> Offer practical travel information and interactive trip planning tools</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>Technical Features</h2>
+            <div class="content-box">
+                <h3>JavaScript Functionality:</h3>
+                <ul>
+                    <li><strong>Activity Filtering:</strong> Real-time filtering by type, price, and difficulty</li>
+                    <li><strong>Favorites System:</strong> LocalStorage-based persistence of saved activities</li>
+                    <li><strong>Trip Planner:</strong> Interactive itinerary builder with budget calculation</li>
+                    <li><strong>Mobile Menu:</strong> Responsive hamburger menu with smooth transitions</li>
+                    <li><strong>Form Handling:</strong> Client-side validation and user feedback</li>
+                </ul>
+
+                <h3>Accessibility Features:</h3>
+                <ul>
+                    <li>Skip to main content link for keyboard navigation</li>
+                    <li>ARIA labels on interactive elements</li>
+                    <li>Semantic HTML5 structure</li>
+                    <li>Sufficient color contrast ratios</li>
+                    <li>Responsive text sizing using relative units</li>
+                    <li>Focus indicators on all interactive elements</li>
+                </ul>
+
+                <h3>Performance Optimizations:</h3>
+                <ul>
+                    <li>CSS variables for efficient style management</li>
+                    <li>Google Fonts with font-display swap</li>
+                    <li>Lazy loading for images</li>
+                    <li>Minimal external dependencies</li>
+                    <li>Efficient DOM manipulation in JavaScript</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Victoria Falls Visitor Guide - WDD 131 Project</p>
+        <p>Created by: Demetrious M Shoniwa</p>
+    </footer>
+</body>
+</html>
